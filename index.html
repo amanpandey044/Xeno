@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="shortcut icon" href="Images/logotitle.png">
+    <title>XENO</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS External Link -->
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Login Page Form -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Xenodroid Login Page</h2>
+            <a class="close" href="#">×</a>
+            <div class="content">
+                <form>
+                    <label name="email">Email</label>
+                    <input type="text" name="email">
+
+                    <label name="password">Password</label>
+                    <input type="password" name="password">
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top-To Icon Present at Bottom Of The Page -->
+    <div onClick="window.scroll({ top: 0,left: 0,behavior: 'smooth' });" id="top-arrow"><i class="fas fa-arrow-circle-up"></i></div>
+
+    <!-- Customer Helpine Chat Box -->
+    <div id="help">
+        <img src="Images/helpline.png">
+        <span id="text-help"> Hi! This is Xini</span>
+    </div>
+
+
+    <header>
+        <!-- Navabr Starting -->
+        <nav>
+            <div id="nav-div-1">
+                <img id="logo" src="Images/logotext.png">
+            </div>
+
+            <div id="nav-div-2">
+                <div class="nav-div-2-common">
+                    Home
+                </div>
+
+                <div class="nav-div-2-common">
+                    Products
+                </div>
+
+                <div class="nav-div-2-common">
+                    Android OS
+                </div>
+
+                <div class="nav-div-2-common">
+                    Retail Stores
+                </div>
+
+                <div class="nav-div-2-common">
+                    Offers
+                </div>
+
+                <div class="nav-div-2-common">
+                    Support
+                </div>
+
+                <div class="nav-div-2-common">
+                    Future+
+                </div>
+            </div>
+
+            <div id="nav-div-3">
+
+                <i id="search" class="fas fa-search search-icon div-3-common"></i>
+
+                <div id="activate-search"
+                    style="display:none;  background-color: rgba(150, 150, 150, 0.5); overflow: hidden; position: fixed; left: 0px; top: 0px; bottom: 0px; right: 0px; z-index: 1000;">
+                    <div
+                        style="background-color: rgb(255, 255, 255); width: 600px; position: static; margin: 20px auto; padding: 20px 30px 0px; top: 110px; overflow: hidden; z-index: 1001; box-shadow: 0px 3px 8px rgba(34, 25, 25, 0.4);">
+                        <iframe src="HTML/search.html" width="400px">Why</iframe>
+                    </div>
+                </div>
+
+                <i class="fas fa-shopping-cart div-3-common"></i>
+
+                <div class="myCart">
+                    <i class="fas fa-user-alt div-3-common"></i>
+                    <div class="dropdown-content">
+                        <a href="#popup1">Login/Register</a>
+                        <a href="#">Orders</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar Ending -->
+
+        <!-- Variants Of Xeno -->
+        <div id="options">
+
+            <div class="options-here ls" style="color: blue">
+                <a href="index.html">Xenodroid</a>
+            </div>
+
+            <div class="options-here ls" style="">
+                <a href="mobile1-page.html">Xeno Ultra Z5</a>
+            </div>
+
+            <div class="options-here ls" style="">
+                <a href="mobile2-page.html">Xeno Pro Z1</a>
+            </div>
+
+            <div class="options-here ls" style="">
+                <a href="mobile3-page.html">Xeno S8</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Middle Part of the Page -->
+
+    <main>
+
+        <div id="main-top">
+
+            <!-- Card Of The Photos Of Mobile -->
+            <div class="carousel-wrapper">
+                <div class="carousel">
+
+                    <img class="carousel__photo initial" src="Images/wall1.jpg">
+                    <img class="carousel__photo" src="Images/wall2.jpg">
+                    <img class="carousel__photo" src="Images/wall3.jpg">
+                    <img class="carousel__photo" src="Images/wall4.jpg">
+                    <img class="carousel__photo" src="Images/wall5.jpg">
+
+                    <div class="carousel__button--next"></div>
+                    <div class="carousel__button--prev"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Youtube Video Section -->
+        <div id="main-middle">
+            <iframe src="https://www.youtube.com/embed/WMh0KzwTviY">
+            </iframe>
+        </div>
+
+        <div id="main-below">
+
+            <!-- Filter Section Present At Left -->
+            <div id="main-left">
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Availability
+                        </span>
+
+                        <span id="arrow1" name="list1" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;" on="101"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list1">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Available To Order</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Versions
+                        </span>
+
+                        <span id="arrow2" name="list2" onclick="arrowClicked(this.id)" show="up">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list2">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno S5 Pro</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno S5</label>
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno S4 Pro</label>
+
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno S3 Pro</label>
+
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno S2 Pro</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno Z1 Ultra</label>
+
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Xeno Z7 Pro</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Price
+                        </span>
+
+                        <span id="arrow3" name="list3" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list3">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Above Rs 100000</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Rs50000 to Rs100000</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Rs30000 to Rs50000</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Rs20000 to Rs Rs30000</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Rs10000 to Rs20000</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Below Rs 20000</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Memory
+                        </span>
+
+                        <span id="arrow4" name="list4" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list4">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Upto 16GB</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">32GB</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">64GB</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">128GB</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">256GB</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">512GB</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">1TB</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Display Size
+                        </span>
+
+                        <span id="arrow5" name="list5" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list5">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">2.9</label>
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Below 6</label>
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Above 6</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Connectivity
+                        </span>
+
+                        <span id="arrow6" name="list6" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list6">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">3G</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">4G</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">5G</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            SIM
+                        </span>
+
+                        <span id="arrow7" name="list7" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list7">
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Single SIM</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Dual SIM</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-left-common">
+
+                    <div class="single-bar">
+                        <span>
+                            Camera
+                        </span>
+
+                        <span id="arrow8" name="list8" onclick="arrowClicked(this.id)" show="1">
+                            <i class="fas fa-chevron-up" style="display: none;"></i>
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="list" id="list8">
+                        <div>
+                            <input type="checkbox" name="check1">
+                            <label name="check1">5MP</label>
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">6MP to 10MP</label>
+                        </div>
+
+                        <div>
+
+                            <input type="checkbox" name="check1">
+                            <label name="check1">Above 10MP</label>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="main-right">
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="1">
+                            <i id="empty-heart-1" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-1" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div1" class="main-right-common-2">
+                        <img id="div1-img" src="Images/mobile1.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div1-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div1-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div1-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div1-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div1-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div1-img" act="1" press="128" id="div1-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div1-img" act="1" press="256"
+                            id="div1-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="2">
+                            <i id="empty-heart-2" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-2" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div2" class="main-right-common-2">
+                        <img id="div2-img" src="Images/mobile2.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div2-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div2-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div2-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div2-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div2-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div2-img" press="128" act="2" id="div2-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div2-img" act="2" press="256"
+                            id="div2-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="3">
+                            <i id="empty-heart-3" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-3" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div3" class="main-right-common-2">
+                        <img id="div3-img" src="Images/mobile3.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div3-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div3-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div3-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div3-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div3-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div3-img" press="128" act="3" id="div3-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div3-img" act="3" press="256"
+                            id="div3-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="4">
+                            <i id="empty-heart-4" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-4" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div4" class="main-right-common-2">
+                        <img id="div4-img" src="Images/mobile4.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div4-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div4-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div4-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div4-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div4-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div4-img" press="128" act="4" id="div4-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div4-img" act="4" press="256"
+                            id="div4-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="5">
+                            <i id="empty-heart-5" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-5" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div5" class="main-right-common-2">
+                        <img id="div5-img" src="Images/mobile5.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div5-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div5-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div5-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div5-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div5-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div5-img" press="128" act="5" id="div5-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div5-img" act="5" press="256"
+                            id="div5-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="6">
+                            <i id="empty-heart-6" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-6" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div6" class="main-right-common-2">
+                        <img id="div6-img" src="Images/mobile2.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div6-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div6-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div6-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div6-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div6-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div6-img" press="128" act="6" id="div6-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div6-img" act="6" press="256"
+                            id="div6-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+                <div class="main-right-common">
+
+                    <div class="main-right-common-1">
+
+                        <span id="new">New</span>
+                        <span style="font-size: 1.2rem;" class="heart" division="7">
+                            <i id="empty-heart-7" class="far fa-heart" ch='1'></i>
+                            <i id="fill-heart-7" class="fas fa-heart" style="display: none; color:rgb(255, 0, 43)"
+                                ch='0'></i>
+                        </span>
+                    </div>
+
+                    <div id="img-div7" class="main-right-common-2">
+                        <img id="div7-img" src="Images/mobile5.jpg">
+                    </div>
+
+                    <div class="main-right-common-3" style="font-size: 2rem; font-weight: 900;">
+                        Xeno G57
+                    </div>
+
+                    <div class="main-right-common-4">
+                        <span style="font-weight: 800;">Color : </span><span id="text-div7-img">Olive</span>
+                    </div>
+
+                    <div class="main-right-common-5">
+                        <span class="img" color="mobile1.jpg" name="div7-img"
+                            style="background-color:#a3ac9b; margin-left: 0px;"></span>
+                        <span class="img" color="mobile2.jpg" name="div7-img" style="background-color:#494d53;"></span>
+                        <span class="img" color="mobile3.jpg" name="div7-img" style="background-color:#9d8cb6;"></span>
+                        <span class="img" color="mobile4.jpg" name="div7-img" style="background-color:#222831;"></span>
+                    </div>
+
+                    <div class="main-right-common-6">
+                        <span class="GB" style="background-color:black; color:white; letter-spacing:0px;"
+                            name="div7-img" press="128" act="7" id="div7-128GB">128GB</span>
+                        <span class="GB" style="letter-spacing:0px;" name="div7-img" act="7" press="256"
+                            id="div7-256GB">256GB</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div id="footer-details">
+
+            <div class="footer-details-common">
+                <div>
+                    <b>Product & Services</b>
+                </div>
+                <div>
+                    Xenodroid
+                </div>
+                <div>
+                    Tablets
+                </div>
+                <div>
+                    Audio Sound
+                </div>
+                <div>
+                    Solutions
+                </div>
+                <div>
+                    Memory Storage
+                </div>
+            </div>
+
+            <div class="footer-details-common">
+                <div>
+                    <b>Shop</b>
+                </div>
+                <div>
+                    Terms & Conditions
+                </div>
+                <div>
+                    FAQs
+                </div>
+                <div>
+                    Cancellation & Return Policy
+                </div>
+                <div>
+                    Track Order Status
+                </div>
+                <div>
+                    Xeno Experience Store
+                </div>
+            </div>
+
+            <div class="footer-details-common">
+                <div>
+                    <b>About Us</b>
+                </div>
+                <div>
+                    Company Info
+                </div>
+                <div>
+                    Branding
+                </div>
+                <div>
+                    Careers
+                </div>
+                <div>
+                    Designs
+                </div>
+                <div>
+                    Ethics
+                </div>
+            </div>
+
+
+        </div>
+        <div id="footer-icons">
+
+            <div id="footer-icons-left">
+
+                <div class="footer-left-common" id="left-1">
+                    <img src="Images/appstore.png">Download
+                </div>
+
+                <div class="footer-left-common" id="left-2">
+                    <img src="Images/playstore.png">Download
+                </div>
+
+            </div>
+
+            <div id="footer-icons-right">
+
+                <ul id="footer-icons-ul">
+
+                    <li class="footer-icons-li">
+
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="footer-icons-li">
+
+                        <a href="#">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+
+                    </li>
+
+                    <li class="footer-icons-li">
+                        <a href="#">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-icons-li">
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-icons-li">
+                        <a href="#">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src='index.js'></script>
+</body>
+
+</html>
